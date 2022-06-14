@@ -11,8 +11,4 @@ Info | Link
 Project Requirements  | https://miro.com/app/board/uXjVOzy5mMg=/
 Trello Board  | https://trello.com/b/erJPqwiA/youtube-project-management
 Miro Board | https://miro.com/app/board/uXjVOzy5mMg=/
-Project Requirements: https://miro.com/app/board/uXjVOzy5mMg=/
 
-Trello Board: https://trello.com/b/erJPqwiA/youtube-project-management
-
-Miro Board: https://miro.com/app/board/uXjVOzy5mMg=/

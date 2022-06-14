@@ -2,7 +2,7 @@
 GitHub Link: https://github.com/KalilahClarke/Youtube-Project-Group9
 
 |Group Members|
-| ----------- | ----------- |----------- |
+|-----------| -----------|-----------|
 | Ziqian Pan | Taji Fuller | Kalilah Clarke |
 
 

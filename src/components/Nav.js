@@ -1,6 +1,15 @@
 import React from 'react'
 import "./Nav.css";
 function Nav() {
+
+  function handleClickHome(e) {
+    e.preventDefault();
+  }
+
+  function handleClickAbout(e) {
+    e.preventDefault();
+  }
+
   return (
     <>
 <ul>

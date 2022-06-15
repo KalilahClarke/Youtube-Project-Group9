@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function About() {
+
+  function handleClickAbout(e) {
+    e.preventDefault();
+  }
   return (
-    <>
+    <div onClick={ handleClickAbout }>
     <p>About Project</p>
     <sections>Ziqian
       <img src='https://avatars.githubusercontent.com/u/96352580?v=4'/>
@@ -17,7 +21,7 @@ function About() {
       <cite>https://github.com/KalilahClarke</cite>
     </sections>
     
-    </>
+    </div>
   )
 }
 

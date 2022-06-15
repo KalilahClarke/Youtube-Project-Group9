@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+.border{
+ display: grid;
+ grid-column: 1/5;
+}
+
+/* .Nav{
+  grid-column: 1/2;
+}
+
+.Header{
+  grid-column: 2/5;
+} */

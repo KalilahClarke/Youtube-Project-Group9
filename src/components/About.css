@@ -1,18 +1,21 @@
 article{
   text-align: center;
-  width: 70%;
+  width: 80%;
   padding: 50px;
   padding-left: 150px;
+}
+article p{
+  text-align: center;
 }
 
 h1{
   text-align: center;
-  padding-left: 120px;
+  /* padding-left: 120px; */
 }
 
 h2{
   text-align: center;
-  padding-left: 120px;
+  /* padding-left: 120px; */
 }
 
 div{

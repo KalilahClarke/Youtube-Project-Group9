@@ -8,9 +8,12 @@ function Header() {
 
   }
   return (
+    <>
+    <img src ="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-0.png" alt ="Hamburger DropDown"/>
+    <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Youtube Logo"/>
+    <form onSubmit={ HandleSubmit }>
     <div className="Header">
     <img  className="Youtube" src="https://socalrealtylaw.com/wp-content/uploads/2021/09/R-1.png" alt="Youtube Logo"/>
-    <form value ={HandleSubmit}>
        <input placeholder ='Search' type = 'text'/>
       <button><img src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png" alt="search icon"/></button> 
 

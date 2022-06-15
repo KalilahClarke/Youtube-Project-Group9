@@ -16,9 +16,9 @@ function Header() {
     <img  className="Youtube" src="https://socalrealtylaw.com/wp-content/uploads/2021/09/R-1.png" alt="Youtube Logo"/>
        <input placeholder ='Search' type = 'text'/>
       <button>Submit</button> 
-
+      </div>
     </form>
-    </div>
+   </>
   )
 }
 

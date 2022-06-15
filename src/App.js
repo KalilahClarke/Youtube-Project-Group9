@@ -12,7 +12,7 @@ function App() {
     <>
     <div>
       <Router>
-        <h1>Hello World</h1>
+  
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />

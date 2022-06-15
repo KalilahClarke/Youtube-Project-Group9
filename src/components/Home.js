@@ -1,5 +1,5 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 
 function Home() {
 
@@ -12,7 +12,7 @@ function Home() {
   })
 
   return (
-    <div>Home</div>
+    <div></div>
   )
 }
 

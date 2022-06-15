@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function About() {
   return (
-    <>
+    <div>
     <p>About Project</p>
     <sections>Ziqian
       <img src='https://avatars.githubusercontent.com/u/96352580?v=4'/>
@@ -16,8 +16,7 @@ function About() {
       <img src ="https://avatars.githubusercontent.com/u/75289632?v=4"/> 
       <cite>https://github.com/KalilahClarke</cite>
     </sections>
-    
-    </>
+    </div>
   )
 }
 

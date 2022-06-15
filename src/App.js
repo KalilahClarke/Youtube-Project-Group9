@@ -17,12 +17,14 @@ function App() {
       {/* <YouTube videoId="2g811Eo7K8U"  />; */}
     <div>
       <Router>
+        <div className ="border">
         <Header/>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
         </Routes>
+        </div>
       </Router>
     </div>
     </>

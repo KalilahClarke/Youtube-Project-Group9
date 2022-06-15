@@ -110,7 +110,7 @@ function About() {
             />
           </a>
           <p>
-            <b>8.4</b> Pursuit Fellow <br /> Fluent in Javascript React,
+            <b>8.4 Pursuit Fellow</b> <br /> Fluent in Javascript React,
             learning one language at a time. Using her Education background she
             endeavors to create Applications that are simplistic and clean; that
             are used to simplify daily life. <strong>Adaptability</strong> is

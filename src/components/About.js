@@ -6,13 +6,13 @@ function About() {
     <article>
       <h1>About Project</h1>
       <p>
-        This project was build in 9 days. Fellows worked together to create a
+        This project was built in 9 days. Fellows worked together to create a
         strong communication system within the primary day as well as mapping
         out a timeline. Fellows were given the task to build{" "}
         <a href="Youtube.com">Youtube</a> with very specific requirements. This
         project accesses the teams React skills, Css skills, and comprehension
-        of scope. They has made a few personal changes based on preference.
-        Please enjoy your Exploration of their take on Youtube.{" "}
+        of scope. They have made a few personal changes based on preference.
+        Please enjoy your exploration of their take on Youtube.{" "}
       </p>
 
       <h2>Collaborators</h2>

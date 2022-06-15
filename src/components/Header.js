@@ -17,8 +17,9 @@ function Header() {
        <input placeholder ='Search' type = 'text'/>
       <button><img src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png" alt="search icon"/></button> 
 
-    </form>
     </div>
+    </form>
+    </>
   )
 }
 

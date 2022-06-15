@@ -9,17 +9,20 @@
 }
 
 .Header{
-  display: flex;
+  
+  margin-top: 10px;
 }
 
 form input{
   width: 470px;
   height: 30px;
   margin-left: 250px;
-  margin-top: 10px;
+ 
 }
 
 form button{
+ 
   width: 60px;
   height: 35px;
+
 }

@@ -82,7 +82,7 @@ function About() {
           </p>
         </section>
 
-        <section class>
+        <section class='KalilahClarke'>
           <img
             src="https://avatars.githubusercontent.com/u/75289632?v=4"
             alt="Kalilah Clarke Profile"

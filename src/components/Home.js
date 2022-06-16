@@ -11,7 +11,6 @@ function Home() {
       )
     .then ((response) => response.json())
     .then ((json) => setVideos(json.items))
-    console.log(newVersion)
   }, [])
 
   return (

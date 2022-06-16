@@ -45,7 +45,7 @@ function About() {
           </a>
 
           <p> <strong>8.4 Pursuit Fellow</strong> <br/>
-          Aspiring full-stack software engineer currently expanding my skill at Pursuit fellowship. Hobbies includes gaming and cooking. 
+          Prioritizing his dream to be a Full-Stack Developer, Ziqian has . Hobbies includes gaming and cooking. 
 
 
           </p>
@@ -78,7 +78,7 @@ function About() {
             />
           </a>
           <p>
-            <strong>8.4 Pursuit Fellow</strong> <br/> Aspiring FSWD currently practicing Javascript, HTML, CSS, and React using JSX.
+            <strong>8.4 Pursuit Fellow</strong> <br/> Having a background Psychology as well being a skilled Computer Technician. Taji aspires to use her comprehension of <b>Human Behavior</b> to create sleek websites that catch and engage the customer. Her passion is Full-Stack Development. Building her skills in Javascript, React, JSX, Css... but don't worry more languages are soon to come.
           </p>
         </section>
 

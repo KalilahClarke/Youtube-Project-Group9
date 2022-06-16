@@ -11,6 +11,7 @@ import Header from "./components/Header"
 
 
 function App() {
+  //Do not forget to add useEffect to import//
 
   // let [videos, setVideos] = useState([])
 

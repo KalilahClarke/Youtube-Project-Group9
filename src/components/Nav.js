@@ -14,7 +14,7 @@ const closeOpenNav = () => {
 
 
   return (
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" className="sidenav">
 <ul>
   <li><img  className="Hamburger"src ="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg" alt ="Hamburger DropDown" width={"100px"}/></li>
   <li><Link to="/"> <img src="https://img.icons8.com/material-sharp/24/undefined/home-page.png" alt="Home" width="25px"/> Home</Link></li>

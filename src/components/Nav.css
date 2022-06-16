@@ -25,10 +25,10 @@ ul {
 
   /* The side navigation menu */
   
-
-.sidenav {
+/* The hotdog is not actually from Nav bar soo.. narbar actually do need to become width:0px. */
+.sidenav1 {
   height: 100%; 
-  /* width: 100px;  */
+  width: 150px; /*this is the thing that needs to change when clicked*/
   position: fixed; 
   z-index: 1; 
   top: 0;
@@ -38,3 +38,23 @@ ul {
   padding-top: 60px; 
   transition: 0.5s; 
 }
+
+.sidenav2 {
+  height: 100%; 
+  width: 50px; /*this is the thing that needs to change when clicked*/
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+

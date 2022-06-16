@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 
 function Home() {
 
+  // let [videos, setVideos] = useState(null)
+
   useEffect(() => {
     fetch(
       `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`

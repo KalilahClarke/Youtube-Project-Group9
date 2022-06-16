@@ -26,7 +26,7 @@ ul {
   /* The side navigation menu */
   
 /* The hotdog is not actually from Nav bar soo.. narbar actually do need to become width:0px. */
-.sidenav1 {
+.sidenavOpen {
   height: 100%; 
   width: 150px; /*this is the thing that needs to change when clicked*/
   position: fixed; 
@@ -39,7 +39,7 @@ ul {
   transition: 0.5s; 
 }
 
-.sidenav2 {
+.sidenavClose {
   height: 100%; 
   width: 50px; /*this is the thing that needs to change when clicked*/
   position: fixed; 

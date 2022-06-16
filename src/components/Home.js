@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 function Home() {
 
-  let [videos, setVideos] = useState(null)
+  let [videos, setVideos] = useState()
 
   useEffect(() => {
     fetch(
@@ -11,8 +11,8 @@ function Home() {
       )
     .then ((response) => response.json())
     .then ((json) => setVideos(json.items))
-    console.log(newVersion)
-  }, [])
+    // console.log(newVersion)
+  })
 
   return (
     <div className='Home'></div>

@@ -11,6 +11,24 @@ import Header from "./components/Header"
 
 
 function App() {
+
+  // let [videos, setVideos] = useState([])
+
+  // useEffect(() => {
+  //   fetch(
+  //     `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
+  //     )
+  //   .then ((response) => response.json())
+  //   // .then ((data) => {
+  //   //   setVideos(data.items)
+  //   //   console.log(data.items)
+  //   // })
+  //   //
+  //   .catch ((err) => {
+  //     console.log(err)
+  //   })
+  // })
+
   return (
     
     <>

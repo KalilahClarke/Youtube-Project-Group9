@@ -1,10 +1,18 @@
-import React from 'react'
 import "./Nav.css";
+import React, { useState } from "react";
+
 // import Home from "./Home";
 // import About from "./About";
 import { Link } from "react-router-dom";
 
 function Nav() {
+
+
+const closeOpenNav = () => {
+
+}
+
+
   return (
     <div id="mySidenav" class="sidenav">
 <ul>

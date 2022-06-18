@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
 import logo from './youtube.png'
 
+
 function Header() {
+
+  const [search, setSearch] = useState('')
+
   const HandleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    console.log(e)
+    setSearch()
   };
   return (
     <>
@@ -17,7 +22,7 @@ function Header() {
             alt="Youtube Logo"
           />
           <div className="search-bar">
-            <input placeholder="Search" type="text" />
+            <input placeholder="Search" type="text"  />
             <button>
               <img
                 src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png"

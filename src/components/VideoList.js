@@ -1,7 +1,31 @@
 import React from 'react'
+import {Link, useParams } from "react-router-dom"
 
-export default function videoList() {
+export default function VideoList() {
   return (
-    <div>videoList</div>
+    <div><h1>VideoList</h1></div>
   )
 }
+
+
+
+// export default function MovieListing({movie}) {
+//     const {title,description,duration,id, listedIn} = movie;
+//     // console.log(movie);
+
+//     const params = useParams();
+//     // console.log(params);
+
+//   return (
+//     <article className="show">
+//     <h3 class="title">
+//       <Link to={`/movies/${id}`}>{title}</Link>
+//     </h3>
+//     <p className="description">{description}</p>
+//     <aside className="details">
+//       <p><span>Listed Categories:</span> {listedIn}</p>
+//       <p><span>Duration:</span> {duration}</p>
+//     </aside>
+//   </article>
+//   )
+// }

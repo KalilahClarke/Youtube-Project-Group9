@@ -37,7 +37,7 @@ function Header() {
         {/* <img
               className="microphone"
               src="https://cdn-icons.flaticon.com/png/512/3293/premium/3293608.png?token=exp=1655341265~hmac=bf1959abc592f8feea4a1905d3dd482d"
-              alt="microphone"
+              alt="microphone!"
             /> */}
       </div>
       <div className = "nav-right header" >

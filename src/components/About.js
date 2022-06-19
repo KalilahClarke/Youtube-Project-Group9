@@ -17,7 +17,7 @@ function About() {
 
       <h2>Collaborators</h2>
       <div className="collaborators">
-        <section class="ZiqianPan">
+        <section className="ZiqianPan">
           <img
             src="https://avatars.githubusercontent.com/u/96352580?v=4"
             alt="Ziqian Pan Profile"
@@ -51,7 +51,7 @@ function About() {
           </p>
         </section>
 
-        <section class="TajiFuller">
+        <section className="TajiFuller">
           <img
             src="https://avatars.githubusercontent.com/u/82912560?v=4"
             alt="Taji Fuller Profile"
@@ -82,7 +82,7 @@ function About() {
           </p>
         </section>
 
-        <section class='KalilahClarke'>
+        <section className='KalilahClarke'>
           <img
             src="https://avatars.githubusercontent.com/u/75289632?v=4"
             alt="Kalilah Clarke Profile"

@@ -17,7 +17,8 @@ function App() {
 
   let [videos, setVideos] = useState([]); // pass it down to [home]videolist to get video data
   const [search, setSearch] = useState("");
-
+  const [submited, setSubmited] = useState(false);
+  // const key = process.env.REACT_APP_API_KEY;
 //should I fetch it here? then pass it down? -- 
 
   // useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
     <div>
       <Router>
         <div className ="border">
-        <Header search={search} setSearch={setSearch} videos={videos} setVideos={setVideos}/>
+        <Header search={search} setSearch={setSearch} videos={videos} setVideos={setVideos} submited={submited} setSubmited={setSubmited}/>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -9,7 +9,7 @@ function Nav() {
   const [showNav, setShowNav] = useState(false);
   const [style, setStyle] = useState("sidenavOpen");//this might need to be moved once home.js is done.
 
-  //https://www.geeksforgeeks.org/changing-css-styling-with-react-onclick-event/
+//https://www.geeksforgeeks.org/changing-css-styling-with-react-onclick-event/
 
 const closeOpenNav = (e) => {
   setShowNav(!showNav)//keeps T/F

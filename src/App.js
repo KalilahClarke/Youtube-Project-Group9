@@ -48,7 +48,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/videoList" element={<VideoList videos={videos} />} />
-          <Route path="/video/:id" element={<Video videos={videos} />} />
+          <Route path="/videos/:id" element={<Video videos={videos} />} />
         </Routes>
         </div>
       </Router>

@@ -78,7 +78,7 @@ function About() {
             />
           </a>
           <p>
-            <strong>8.4 Pursuit Fellow</strong> <br/> Having a background Psychology as well being a skilled Computer Technician. Taji aspires to use her comprehension of <b>Human Behavior</b> to create sleek websites that catch and engage the customer. Her passion is Full-Stack Development. Building her skills in Javascript, React, JSX, Css... but don't worry more languages are soon to come.
+            <strong>8.4 Pursuit Fellow</strong> <br/> Having a background Psychology as well being a skilled Computer Technician, Taji aspires to use her comprehension of <b>Human Behavior</b> to create sleek websites that are eye catching and engaging. Her passion is Full-Stack Development. Building her skills in Javascript, React, JSX, Css... but don't worry more languages are soon to come.
           </p>
         </section>
 

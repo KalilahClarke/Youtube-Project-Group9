@@ -7,23 +7,76 @@
 
 .header{
   display: flex;
-  margin-top: 10px;
+  align-items: center;
+}
+
+nav{
+  padding:10px 2%;
   justify-content: space-between;
-  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: white;
+  position: static;
+  top: 0;
+  z-index: 10;
+}
+
+.header .nav-left .menu-icon{
+  width: 50px;
+  margin-right: 25px;
+}
+
+.header .nav-left .logo{
+  width: 100px;
+}
+
+.nav-middle .microphone {
+  width: 30px;
+  height: 35px;
+  padding-left: 12px;
+}
+
+/* .nav-middle .search-box{
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+} */
+
+/* .nav-middle .search-box input{
+  width: 400px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+} */
+.nav-middle .search-box button img{
+  width: 18px
+}
+
+
+.nav-right img{
+  width: 25px;
+  margin-right: 25px;
+}
+
+.nav-right .user-icon{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 0;
 }
 
 form input{
   width: 470px;
   height: 30px;
-  
+
  
 }
 
 button{
  
-  width: 60px;
-  height: 35px;
-  margin-top: 5px;
+  width: 55px;
+  height: 30px;
+  /* margin-top: 5px; */
 
 }
 .search-bar{
@@ -31,16 +84,17 @@ button{
   align-items: flex-end;
 }
 
-.microphone{
-  width: 35px;
-  height: 35px;
-  padding-left: 10px;
-}
-.create{
+
+/*
+.upload{
   width: 40px;
   height: 40px;
 }
 .notification{
   width: 40px;
   height: 40px;
+} */
+
+img{
+  cursor: pointer;
 }

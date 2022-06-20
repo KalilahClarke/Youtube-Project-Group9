@@ -14,7 +14,7 @@ import Video from "./components/Video";
 function App() {
   //Do not forget to add useEffect to import//
 
-  let [videos, setVideos] = useState([])
+  let [videos, setVideos] = useState([]);
 
   useEffect(() => {
     fetch(

@@ -27,63 +27,25 @@ function Header() {
       <img className='menu-icon' src ="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg" alt ="menu"/>
       <img className ="logo" src = {logo} alt = "youtube-logo"/>
       </div>
+
       <div className ="nav-middle header">
         <form className="search-box">
-          <input type='text' placeholder="Search"/>
+          <input type='text' placeholder="Search"/> 
           <button className="header">
             <img src= "https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png" alt="search"/>
           </button>
+    
         </form>
-        {/* <img
-              className="microphone"
-              src="https://cdn-icons.flaticon.com/png/512/3293/premium/3293608.png?token=exp=1655341265~hmac=bf1959abc592f8feea4a1905d3dd482d"
-              alt="microphone!"
-            /> */}
       </div>
+
+
       <div className = "nav-right header" >
         <img src={upload} alt="upload"/>
         <img src ={more} alt="more"/>
         <img src ={notification} alt ="notification"/>
         <img className="user-icon" src ={jack} alt ="Profile"/>
       </div>
-      {/* <form onSubmit={HandleSubmit}>
-        <div className="header">
-          <img
-            className="youtube"
-            src={logo}
-            alt="Youtube Logo"
-          />
-          <div className="search-bar">
-            <input placeholder="Search" type="text"  />
-            <button>
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png"
-                alt="search icon"
-                width="20px"
-                height="20px"
-              />
-            </button>
-            <img
-              className="microphone"
-              src="https://cdn-icons.flaticon.com/png/512/3293/premium/3293608.png?token=exp=1655341265~hmac=bf1959abc592f8feea4a1905d3dd482d"
-              alt="microphone"
-            />
-          </div>
-          <div className="header-icons">
-            <img
-              className="upload"
-              src= {upload}
-              alt="upload"
-              />
-            
-            <img className="notification"
-            src = {notification}
-            alt="notification"
-            />
-            {/* additional icons */}
-          {/* </div>
-        </div>
-      </form> */}
+      
     </nav>
   );
 }

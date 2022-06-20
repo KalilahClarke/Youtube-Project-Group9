@@ -8,6 +8,14 @@ export default function VideoList() {
 }
 
 
+//pass the search state down. // this could JUST BE THE HOME.JS 
+//conditional render if there is search result - then - show .map and all the video 
+//ELSE - show random video or - NOTHING.  
+//use the ALL video return - to it - so it gets. .MAP in here. 
+//display them . 
+//also tag them with video.js SO it can be routed to the individual video. 
+
+
 
 // export default function MovieListing({movie}) {
 //     const {title,description,duration,id, listedIn} = movie;

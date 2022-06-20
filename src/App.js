@@ -8,28 +8,32 @@ import Nav from "./components/Nav";
 import Header from "./components/Header"
 import VideoList from "./components/VideoList";
 import Video from "./components/Video";
+import VideoCard from "./components/VideoCard";
 // import YouTube from 'react-youtube';
 
 
 function App() {
   //Do not forget to add useEffect to import//
 
-  let [videos, setVideos] = useState([]);
+  let [videos, setVideos] = useState([]); // pass it down to [home]videolist to get video data
+  const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-      )
-    .then ((response) => response.json())
-    .then ((data) => {
-      setVideos(data.items)
+//should I fetch it here? then pass it down? -- 
+
+  // useEffect(() => {
+  //   fetch(
+  //     `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
+  //     )
+  //   .then ((response) => response.json())
+  //   .then ((data) => {
+  //     setVideos(data.items)
       
-    })
+  //   })
     
-    .catch ((err) => {
-      console.log(err)
-    })
-  })
+  //   .catch ((err) => {
+  //     console.log(err)
+  //   })
+  // })
 
   return (
     
@@ -38,14 +42,13 @@ function App() {
     <div>
       <Router>
         <div className ="border">
-        <Header/>
+        <Header search={search} setSearch={setSearch} videos={videos} setVideos={setVideos}/>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/videoList" element={<VideoList />} />
-          <Route path="/Video" element={<Video />} />
-
+          <Route path="/about" element={<About />} />
+          <Route path="/videoList" element={<VideoList videos={videos} />} />
+          <Route path="/video/:id" element={<Video videos={videos} />} />
         </Routes>
         </div>
       </Router>

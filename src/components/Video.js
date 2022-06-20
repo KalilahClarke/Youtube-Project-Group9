@@ -1,10 +1,25 @@
 import React from 'react'
 import { useParams, useHistory } from "react-router-dom";
-// import Error from "../common/Error"// need to make a Error page.
+import YouTube from 'react-youtube';
+import Error from './Error';
 
-export default function Video() {
+
+export default function Video({videos}) {
+
+const {id} = useParams();
+const video = videos.find((video)=> video.id.videoId === id);
+
+if (!video) {
+    return <Error/>
+}
   return (
-    <div><h1>Video</h1></div>
+    <div>
+  <h4>{video.snippet.title}</h4> 
+    <YouTube videoId={`${video.id.videoId}`}/>
+    <h4>{video.snippet.channelTitle}</h4>
+   
+    
+    </div>
   )
 }
 

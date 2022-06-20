@@ -26,6 +26,7 @@ const Nav= () => {
   return(
     <div className ='sidebar' >
 
+
       <div className='shortcut-links'>
      <Link to ='/'> 
      <a href =""><img src ={home}/><p>Home</p></a>
@@ -46,6 +47,7 @@ const Nav= () => {
      <a href =""><img src ={messages}/><p>Messages</p></a>
      </Link>
     </div>
+
 
       </div>
   )
@@ -74,6 +76,17 @@ export default Nav
 
   <li><Link to="/"> <img src="https://img.icons8.com/material-sharp/24/undefined/home-page.png" alt="Home" width="25px"/> Home</Link></li>
   <li><Link to="/about"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> About</Link></li>
+
+  <li><Link to="/videoList"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> videoList</Link></li>
+  <li><Link to="/video"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> video</Link></li>
+</ul>
+    </div>
+  )
+}
+
+export default Nav
+
   <li><Link to="/VideoList"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> videoList</Link></li>
   <li><Link to="/Video"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> video</Link></li> */}
 {/* </ul> */}
+

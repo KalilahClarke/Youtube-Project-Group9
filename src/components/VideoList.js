@@ -1,31 +1,26 @@
-import React from 'react'
-import {Link, useParams } from "react-router-dom"
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import YouTube from "react-youtube";
+import VideoCard from "./VideoCard";
+import Error from "./Error";
 
-export default function VideoList() {
+export default function VideoList({ videos }) {
+  if (!videos) {
+    return (
+      <div>
+        <h2>Please enter something</h2>
+        <Error />
+      </div>
+    );
+  }
   return (
-    <div><h1>VideoList</h1></div>
-  )
+    <div>
+      <div>
+        <h1>Videos</h1>
+        {videos.map((video) => {
+          return <VideoCard video={video} />;
+        })}
+      </div>
+    </div>
+  );
 }
-
-
-
-// export default function MovieListing({movie}) {
-//     const {title,description,duration,id, listedIn} = movie;
-//     // console.log(movie);
-
-//     const params = useParams();
-//     // console.log(params);
-
-//   return (
-//     <article className="show">
-//     <h3 class="title">
-//       <Link to={`/movies/${id}`}>{title}</Link>
-//     </h3>
-//     <p className="description">{description}</p>
-//     <aside className="details">
-//       <p><span>Listed Categories:</span> {listedIn}</p>
-//       <p><span>Duration:</span> {duration}</p>
-//     </aside>
-//   </article>
-//   )
-// }

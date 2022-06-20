@@ -18,7 +18,7 @@ function Header({ search, setSearch, videos, setVideos, submited, setSubmited}) 
 
   useEffect(() => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=AIzaSyAi5Jn7WskXRhoA0YdoBvqhtbyL5iOJoDU`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${apiKey}`
       // `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${process.env.REACT_APP_API_KEY}`
       )
     .then ((response) => response.json())

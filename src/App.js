@@ -15,6 +15,7 @@ import VideoCard from "./components/VideoCard";
 function App() {
   //Do not forget to add useEffect to import//
 
+
   let [videos, setVideos] = useState([]); // pass it down to [home]videolist to get video data
   const [search, setSearch] = useState("");
   const [submited, setSubmited] = useState(false);
@@ -36,6 +37,9 @@ function App() {
   //   })
   // })
 
+ 
+
+
   return (
     
     <>
@@ -46,10 +50,18 @@ function App() {
         <Header search={search} setSearch={setSearch} videos={videos} setVideos={setVideos} submited={submited} setSubmited={setSubmited}/>
         <Nav />
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/videoList" element={<VideoList videos={videos} />} />
           <Route path="/videos/:id" element={<Video videos={videos} />} />
+
+          <Route path="/" element={<Home videos={ videos } setVideos={ setVideos }/>} />
+          <Route path="/About" element={<About />} />
+          <Route path="/videoList" element={<VideoList />} />
+          <Route path="/Video" element={<Video />} />
+
+
         </Routes>
         </div>
       </Router>

@@ -1,4 +1,4 @@
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,10 +15,10 @@ ul {
   }
   
   /* Change the link color on hover */
-  li a:hover {
+  /* li a:hover {
     background-color: #555;
     color: white;
-  }
+  } */
   /* div {
     grid-template-columns: repeat(8, 1fr);
   } */
@@ -26,32 +26,30 @@ ul {
   /* The side navigation menu */
   
 /* The hotdog is not actually from Nav bar soo.. narbar actually do need to become width:0px. */
-.sidenavOpen {
-  height: 100%; 
-  width: 150px; /*this is the thing that needs to change when clicked*/
-  position: fixed; 
-  z-index: 1; 
+.sidebar{
+  background:#fff;
+  width:15%;
+  height: 100vh;
+  position:fixed;
   top: 0;
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+  padding-left: 2%;
+  padding-top: 80px;
 }
 
-.sidenavClose {
-  height: 100%; 
-  width: 50px; /*this is the thing that needs to change when clicked*/
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+.shortcut-links a img{
+  width: 20px;
+  margin-right: 10px
+}
+.shortcut-links a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width:fit-content;
+  flex-wrap:wrap;
 }
 
+ 
+ 
 
 
 /* .sidenav a:hover {

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Link, Routes, Route, Router } from "react-router-dom";
 
-function Thumbnail() {
+export default function Thumbnail({ video }) {
   return (
-    <div>Thumbnail</div>
-  )
+    <div>
+      <li>
+        <Link to={`/video/${video.id.videoId}`}>
+          <img alt="thumbnails" src={video.snippet.thumbnails.default.url} />
+          <h3>{video.snippet.title}</h3>
+          <p>{video.id.videoId}</p>
+        </Link>
+      </li>
+    </div>
+  );
 }
-
-export default Thumbnail

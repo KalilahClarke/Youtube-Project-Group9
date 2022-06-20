@@ -14,22 +14,7 @@ import Video from "./components/Video";
 function App() {
   //Do not forget to add useEffect to import//
 
-  let [videos, setVideos] = useState([])
-
-  useEffect(() => {
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-      )
-    .then ((response) => response.json())
-    .then ((data) => {
-      setVideos(data.items)
-      
-    })
-    
-    .catch ((err) => {
-      console.log(err)
-    })
-  })
+  const [videos, setVideos] = useState([])
 
   return (
     
@@ -41,7 +26,7 @@ function App() {
         <Header/>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home videos={ videos } setVideos={ setVideos }/>} />
           <Route path="/About" element={<About />} />
           <Route path="/videoList" element={<VideoList />} />
           <Route path="/Video" element={<Video />} />

@@ -13,7 +13,7 @@ import messages from './images/messages.png'
 
 
 const SideNav= () => {
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);// move it to apps. to pass it down 
   const [style, setStyle] = useState("sidenavOpen");//this might need to be moved once home.js is done.
   const closeOpenNav = (e) => {
     setShowNav(!showNav)//keeps T/F

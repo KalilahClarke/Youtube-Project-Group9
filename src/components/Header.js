@@ -17,6 +17,7 @@ function Header({ search, setSearch, videos, setVideos, submited, setSubmited}) 
   const apiKey = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
+    console.log(apiKey)
     fetch(
       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${apiKey}`
       // `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${process.env.REACT_APP_API_KEY}`

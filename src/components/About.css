@@ -2,7 +2,7 @@ article{
   text-align: center;
   width: 80%;
   padding: 50px;
-  padding-left: 150px;
+  padding-left: 225px;
 }
 article p{
   text-align: center;
@@ -20,12 +20,13 @@ h2{
 
 .collaborators{
   display: grid;
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(3, 1fr);
+  
 }
 
-
 section{
-  padding: 20px
+  padding: 20px;
+ 
 }
 section .ZiqianPan{
   grid-column: 1/2;

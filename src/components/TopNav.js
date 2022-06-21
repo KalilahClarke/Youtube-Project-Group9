@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "./youtube.png";
 import upload from "./images/upload.png";
 import notification from "./images/notification.png";
@@ -60,7 +61,7 @@ function TopNav({
           src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg"
           alt="menu"
         />
-        <img className="logo" src={logo} alt="youtube-logo" />
+        <img className="logo" src={logo} alt="youtube-logo" onClick={handleHome} />
       </div>
 
       <div className="nav-middle header">

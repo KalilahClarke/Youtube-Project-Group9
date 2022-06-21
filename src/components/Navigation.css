@@ -24,14 +24,14 @@ nav {
 }
 
 .header .nav-left .logo {
-  width: 100px;
+  width: 130px;
 }
 
 .nav-middle .microphone {
-  width: 30px;
-  height: 35px;
-  padding-left: 12px;
+  width: 16px;
 }
+
+
 
 .search-box {
   display: flex;
@@ -75,7 +75,7 @@ button {
 img {
   cursor: pointer;
 }
-
+/* ---------------------------------------sidebar----------------------------- */
 .sidebar{
   background:#fff;
   width:15%;
@@ -88,7 +88,7 @@ img {
 
 .shortcut-links a img{
   width: 20px;
-  margin-right: 10px
+  margin-right: 20px;
 }
 .shortcut-links a {
   display: flex;
@@ -97,4 +97,16 @@ img {
   width:fit-content;
   flex-wrap:wrap;
 }
+
+.shortcut-links a:first-child{
+  color: #ed3833;
+
+}
+.sidebar hr{
+  border: 0;
+  height:  1px;
+  background: #ccc;
+  width: 85% ;
+}
+
 

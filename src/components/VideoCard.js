@@ -7,8 +7,8 @@ export default function VideoCard({ video }) {
 
   return (
     <Link to={`/videos/${video.id.videoId}`}>
-      <div>
-        <img alt="thumbnails" src={thumbnails.default.url} />
+      <div id ='thumbnail'>
+        <img alt="thumbnails" src={thumbnails.default.url} className="video"/>
         <p>
           <strong>{title}</strong>
         </p>

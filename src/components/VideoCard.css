@@ -4,4 +4,10 @@
 div {
     text-align: center;
     margin: auto;
+    /* display: grid */
+}
+
+.video{
+    width: 250px;
+    height: 150px;
 }

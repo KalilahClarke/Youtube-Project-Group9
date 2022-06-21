@@ -1,30 +1,24 @@
-import React from 'react'
-import { useParams, useHistory } from "react-router-dom";
-import YouTube from 'react-youtube';
-import Error from './Error';
+import React from "react";
+import { useParams } from "react-router-dom";
+import YouTube from "react-youtube";
+import Error from "./Error";
 
+export default function Video({ videos }) {
+  const { id } = useParams();
+  const video = videos.find((video) => video.id.videoId === id);
 
-export default function Video({videos}) {
-
-const {id} = useParams();
-const video = videos.find((video)=> video.id.videoId === id);
-
-if (!video) {
-    return <Error/>
-}
+  if (!video) {
+    return <Error />;
+  }
   return (
     <div>
-  <h4>{video.snippet.title}</h4> 
-    <YouTube videoId={`${video.id.videoId}`}/>
-    <h4>{video.snippet.channelTitle}</h4>
-   
-    
+      <YouTube videoId={`${video.id.videoId}`} />
+      <h3>{video.snippet.title}</h3>
+      <h4>{video.snippet.channelTitle}</h4>
+      <p>{video.snippet.description}</p>
     </div>
-  )
+  );
 }
-
-
-
 
 // import React from "react";
 // import { useParams, useHistory } from "react-router-dom";

@@ -10,6 +10,11 @@ import subscription from './images/subscription.png'
 import history from './images/history.png'
 import playlist from './images/playlist.png'
 import messages from './images/messages.png'
+import jack from './images/Jack.png'
+import simon from './images/simon.png'
+import tom from './images/tom.png'
+import megan from './images/megan.png'
+import cameron from './images/cameron.png'
 
 
 const SideNav= () => {
@@ -46,7 +51,16 @@ const SideNav= () => {
      <Link to ='/messages'> 
      <a href =""><img src ={messages}/><p>Messages</p></a>
      </Link>
+     <hr/>
     </div>
+      <div class="subscribed-list">
+        <h3>SUBSCRIBED</h3>
+        <a href =''><img src ={jack}/><p>Jack Nicholson</p></a>
+        <a href =''><img src ={simon}/><p>Jack Nicholson</p></a>
+        <a href =''><img src ={tom}/><p>Jack Nicholson</p></a>
+        <a href =''><img src ={megan}/><p>Jack Nicholson</p></a>
+        <a href =''><img src ={cameron}/><p>Jack Nicholson</p></a>
+      </div>
 
 
       </div>

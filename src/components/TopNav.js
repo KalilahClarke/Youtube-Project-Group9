@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navigation.css";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import logo from "./youtube.png";
 import upload from "./images/upload.png";
 import notification from "./images/notification.png";
@@ -10,52 +10,46 @@ import jack from "./images/Jack.png";
 import microphone from "./images/voice-search.png";
 import Error from "./Error";
 
+function TopNav({
+  search,
+  setSearch,
+  videos,
+  setVideos,
+  submited,
+  setSubmited,
+}) {
 
-
-function TopNav({ search, setSearch, videos, setVideos, submited, setSubmited}) {
-  // const [search, setSearch] = useState('')
   const apiKey = process.env.REACT_APP_API_KEY;
+  const navigate = useNavigate();
 
   useEffect(() => {
-    console.log(apiKey)
     fetch(
       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${apiKey}`
-      // `https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&maxResults=4&q=${search}&type=video&key=${process.env.REACT_APP_API_KEY}`
-      )
-    .then ((response) => response.json())
-    .then ((data) => {
-      console.log(data)
-      console.log(data.items)
-      setVideos(data.items)
-  
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setVideos(data.items);
+        setSearch("");
+      })
+      .catch((err) => {
+        console.log(err);
       
-    })
-    .catch ((err) => {
-      console.log(err)
-      // return (<Error/>)
-    })
-  },[submited])
-
-
+      });
+  }, [submited]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(search);
     setSubmited(!submited);
-
-
-//fetch here? -> then go to videoList to .map them. 
-
-// setVideos(data.items);//this works. 
-console.log(apiKey);
-
-// setSearch("");//I think this clears it. 
-};
+  
+  };
 
   const handleChange = (e) => {
     setSearch(e.target.value);
-    // console.log(search);
-    // console.log(key)
+ 
+  };
+
+  const handleHome = () => {
+    navigate("/");
   };
 
   return (
@@ -77,16 +71,12 @@ console.log(apiKey);
             value={search}
             onChange={handleChange}
           />
-      
-  <Link to="/">
-          <button className="header">
+          <button className="header" onClick={handleHome}>
             <img
               src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png"
               alt="search"
             />
           </button>
-</Link>
-
         </form>
       </div>
 

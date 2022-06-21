@@ -13,7 +13,7 @@ nav {
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background: white;
-  position: static;
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -75,3 +75,26 @@ button {
 img {
   cursor: pointer;
 }
+
+.sidebar{
+  background:#fff;
+  width:15%;
+  height: 100vh;
+  position:fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80px;
+}
+
+.shortcut-links a img{
+  width: 20px;
+  margin-right: 10px
+}
+.shortcut-links a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width:fit-content;
+  flex-wrap:wrap;
+}
+

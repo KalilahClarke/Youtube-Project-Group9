@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./Navigation.css";
 import { Link, useParams } from "react-router-dom";
 import logo from "./youtube.png";
 import upload from "./images/upload.png";
@@ -12,7 +12,7 @@ import Error from "./Error";
 
 
 
-function Header({ search, setSearch, videos, setVideos, submited, setSubmited}) {
+function TopNav({ search, setSearch, videos, setVideos, submited, setSubmited}) {
   // const [search, setSearch] = useState('')
   const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -99,4 +99,4 @@ console.log(apiKey);
   );
 }
 
-export default Header;
+export default TopNav;

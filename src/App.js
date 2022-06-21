@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Home from "./components/Home";
-import Nav from "./components/Nav";
-import Header from "./components/Header"
-import VideoList from "./components/VideoList";
+import TopNav from "./components/TopNav";
+import SideNav from "./components/SideNav"
 import Video from "./components/Video";
 import VideoCard from "./components/VideoCard";
 // import YouTube from 'react-youtube';
@@ -14,6 +13,7 @@ import VideoCard from "./components/VideoCard";
 
 function App() {
   //Do not forget to add useEffect to import//
+
 
   let [videos, setVideos] = useState([]); // pass it down to [home]videolist to get video data
   const [search, setSearch] = useState("");
@@ -36,6 +36,9 @@ function App() {
   //   })
   // })
 
+ 
+
+
   return (
     
     <>
@@ -43,13 +46,21 @@ function App() {
     <div>
       <Router>
         <div className ="border">
-        <Header search={search} setSearch={setSearch} videos={videos} setVideos={setVideos} submited={submited} setSubmited={setSubmited}/>
-        <Nav />
+        <TopNav search={search} setSearch={setSearch} videos={videos} setVideos={setVideos} submited={submited} setSubmited={setSubmited}/>
+        <SideNav />
         <Routes>
-          <Route path="/" element={<Home />} />
+
+        
           <Route path="/about" element={<About />} />
-          <Route path="/videoList" element={<VideoList videos={videos} />} />
+          <Route path="/" element={<Home videos={videos} />} />
           <Route path="/videos/:id" element={<Video videos={videos} />} />
+
+          {/* <Route path="/" element={<Home videos={ videos } setVideos={ setVideos }/>} />
+          <Route path="/About" element={<About />} />
+          <Route path="/VideoList" element={<VideoList />} />
+          <Route path="/Video" element={<Video />} /> */}
+
+
         </Routes>
         </div>
       </Router>

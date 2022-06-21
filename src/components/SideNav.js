@@ -1,5 +1,5 @@
-import "./Nav.css";
-import './Header.css'
+import "./Navigation.css";
+
 import React, { useState } from "react";
 // import Home from "./Home";
 // import About from "./About";
@@ -12,7 +12,7 @@ import playlist from './images/playlist.png'
 import messages from './images/messages.png'
 
 
-const Nav= () => {
+const SideNav= () => {
   const [showNav, setShowNav] = useState(false);
   const [style, setStyle] = useState("sidenavOpen");//this might need to be moved once home.js is done.
   const closeOpenNav = (e) => {
@@ -67,7 +67,7 @@ const Nav= () => {
 //   )
 // }
 
-export default Nav
+export default SideNav
 
 {/* <ul> */}
 {/* this top one needs to be in the home.js - not here. */}
@@ -84,7 +84,7 @@ export default Nav
   )
 }
 
-export default Nav
+export default SideNav
 
   <li><Link to="/VideoList"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> videoList</Link></li>
   <li><Link to="/Video"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> video</Link></li> */}

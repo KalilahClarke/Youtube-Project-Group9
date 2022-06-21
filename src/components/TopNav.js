@@ -77,7 +77,8 @@ console.log(apiKey);
             value={search}
             onChange={handleChange}
           />
-  <Link to={`/videoList`}>
+      
+  <Link to="/">
           <button className="header">
             <img
               src="https://img.icons8.com/ios-glyphs/30/undefined/search--v1.png"

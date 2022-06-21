@@ -9,7 +9,7 @@
 }
 
 nav {
-  padding: 10px 2%;
+  padding: 0px 2%;
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background: white;
@@ -20,7 +20,8 @@ nav {
 
 .header .nav-left .menu-icon {
   width: 50px;
-  margin-right: 25px;
+  margin-right: 0 px;
+  text-align: left;
 }
 
 .header .nav-left .logo {
@@ -82,18 +83,19 @@ img {
   height: 100vh;
   position:fixed;
   top: 0;
-  padding-left: 2%;
-  padding-top: 80px;
+  padding-left: 85px;
+  padding-top: 60px;
 }
 
 .shortcut-links a img{
-  width: 20px;
+  width: 18px;
+  height: 18px;
   margin-right: 20px;
 }
 .shortcut-links a {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   width:fit-content;
   flex-wrap:wrap;
 }
@@ -110,3 +112,33 @@ img {
 }
 
 
+.subscribed-list h3{
+  font-size: 13px;
+  margin: 10px 0;
+  color: #5a5a5a;
+
+}
+
+.subscribed-list a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.subscribed-list a img{
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* ----------------------------Small-SideBar------------------------- */
+
+.small-sidebar{
+  width: 5%;
+}
+
+.small-sidebar a p{
+  display: none;
+}

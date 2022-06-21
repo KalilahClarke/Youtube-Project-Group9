@@ -10,7 +10,7 @@ function About() {
         strong communication system within the primary day as well as mapping
         out a timeline. Fellows were given the task to build{" "}
         <a href="Youtube.com">Youtube</a> with very specific requirements. This
-        project accesses the teams React skills, Css skills, and comprehension
+        project accessed the teams React skills, Css skills, and comprehension
         of scope. They have made a few personal changes based on preference.
         Please enjoy your exploration of their take on Youtube.{" "}
       </p>

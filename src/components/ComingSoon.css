@@ -9,6 +9,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  button  {
+    width: 250px;
+  }
   
 
 

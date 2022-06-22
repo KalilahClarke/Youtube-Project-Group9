@@ -13,7 +13,7 @@ export default function ComingSoon() {
   <div class="middle">
     <h1>COMING SOON</h1>
     <p>Work in progress</p>
-    <button onClick={handleHome}>Go Back to Home</button>
+    <button id='comingsoon' onClick={handleHome}>Go Back to Home</button>
   </div>
   )
 }

@@ -97,7 +97,7 @@ function TopNav({
         <form onSubmit={handleSubmit} className="search-box">
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search NOTHING for Random Videos"
             value={search}
             onChange={handleChange}
           />

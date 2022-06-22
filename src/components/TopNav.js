@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +18,8 @@ function TopNav({
   setVideos,
   submited,
   setSubmited,
+  hamburger, 
+  setHamburger
 }) {
 
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -53,6 +55,14 @@ function TopNav({
     navigate("/");
   };
 
+  const changeNav = ()=>{
+    
+    setHamburger(!hamburger)
+    
+  }
+   
+  
+
   return (
     <nav className="header">
       <div className="nav-left header">
@@ -60,6 +70,8 @@ function TopNav({
           className="menu-icon"
           src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg"
           alt="menu"
+          onClick ={changeNav}
+          value = {hamburger}
         />
         <img className="logo" src={logo} alt="youtube-logo" onClick={handleHome} />
       </div>

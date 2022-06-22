@@ -1,6 +1,6 @@
 import "./Navigation.css";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Home from "./Home";
 // import About from "./About";
 import { Link } from "react-router-dom";
@@ -16,19 +16,15 @@ import tom from "./images/tom.png";
 import megan from "./images/megan.png";
 import cameron from "./images/cameron.png";
 
-const SideNav = () => {
-  const [showNav, setShowNav] = useState(false); // move it to apps. to pass it down
-  const [style, setStyle] = useState("sidenavOpen"); //this might need to be moved once home.js is done.
-  const closeOpenNav = (e) => {
-    setShowNav(!showNav); //keeps T/F
-    if (showNav) {
-      setStyle("sidenavOpen");
-    } else {
-      setStyle("sidenavClose");
-    }
-  };
+const SideNav = ({hamburger, setHamburger}) => {
+  //const [showNav, setShowNav] = useState(false); // move it to apps. to pass it down
+  //this might need to be moved once home.js is done.
+  
+    // setShowNav(!showNav); //keeps T/F
+  debugger
+
   return (
-    <div className="sidebar">
+    <div className = {hamburger ? "small-sidebar" :"sidebar"}>
       <div className="shortcut-links">
         <Link to="/">
           <a href="">

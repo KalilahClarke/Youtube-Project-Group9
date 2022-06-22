@@ -17,6 +17,7 @@ function App() {
   let [videos, setVideos] = useState([]); // pass it down to [home]videolist to get video data
   const [search, setSearch] = useState("");
   const [submited, setSubmited] = useState(false);
+  const [hamburger, setHamburger] = useState(false)
 
   return (
     <>
@@ -30,8 +31,15 @@ function App() {
               setVideos={setVideos}
               submited={submited}
               setSubmited={setSubmited}
+              hamburger ={hamburger}
+              setHamburger ={setHamburger}
             />
-            <SideNav />
+        
+            <SideNav 
+
+              hamburger ={hamburger}
+              setHamburger ={setHamburger}
+            />
             <Routes>
               <Route path="/" element={<Home search={search} videos={videos} />} />
               <Route path="/about" element={<About />} />

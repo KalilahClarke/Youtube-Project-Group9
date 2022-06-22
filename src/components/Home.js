@@ -15,7 +15,7 @@ export default function Home({ videos, search, randomVideos, setDisplaySearch, d
   } else {
     return (
       <div>
-        <h1>{displaySearch} Videos</h1>
+        {/* <h1>{displaySearch} Videos</h1> */}
         {videos.map((video) => {
           return <VideoCard video={video} />;
         })}

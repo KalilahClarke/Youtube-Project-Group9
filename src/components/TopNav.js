@@ -36,12 +36,14 @@ function TopNav({
       .then((data) => {
         setVideos(data.items);
         setSearch("");
+  
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [submited]);
-
+    }, [submited]);
+    
+    
   const handleSubmit = (e) => {
     e.preventDefault();
     setRandomVideos(true);

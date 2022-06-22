@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import YouTube from "react-youtube";
 import Error from "./Error";
+import "./Video.css"
 
 export default function Video({ videos, setTheVideo, theVideo }) {
   const { id } = useParams();
@@ -31,10 +32,11 @@ export default function Video({ videos, setTheVideo, theVideo }) {
     return <Error/>
   }
     return (
-      <div>
+      <div className ='video-component'>
       <YouTube videoId={`${video.id.videoId}`} />
       <h3>{video.snippet.title}</h3>
-      <h4>{video.snippet.channelTitle}</h4>
+      <h5>{video.snippet.publishedAt}</h5>
+      <h5>{video.snippet.channelTitle}</h5>
       {/* <p>{video.snippet.description}</p> */}
     </div>
     );

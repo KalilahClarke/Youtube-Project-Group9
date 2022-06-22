@@ -1,0 +1,11 @@
+.video-component{
+  text-align: left;
+  padding: 20px 5px;
+}
+
+.video-component .Youtube{
+  width: 1000px;
+  height: 900px;
+}
+
+

@@ -40,6 +40,14 @@ const SideNav = ({
     setDisplaySearch("");
   };
 
+
+
+  //-----------------------------SUBSCRIPTIONS---------------------------//
+  
+  const handleJack = () =>{
+
+  }
+
   return (
     <div className={hamburger ? "small-sidebar" : "sidebar"}>
       <div className="shortcut-links">
@@ -84,7 +92,9 @@ const SideNav = ({
       <div class="subscribed-list">
         <h3>SUBSCRIBED</h3>
         <a href="">
-          <img src={jack} />
+          <img src={jack} onClick ={(()=>{
+            setSearch('Jack Nicholson')
+          })} />
           <p>Jack Nicholson</p>
         </a>
         <a href="">

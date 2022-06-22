@@ -16,18 +16,35 @@ import tom from "./images/tom.png";
 import megan from "./images/megan.png";
 import cameron from "./images/cameron.png";
 
-const SideNav = ({hamburger, setHamburger}) => {
+const SideNav = ({
+  hamburger,
+  setHamburger,
+  search,
+  setSearch,
+  videos,
+  setVideos,
+  displaySearch,
+  setDisplaySearch,
+  randomVideos,
+  setRandomVideos,
+}) => {
   //const [showNav, setShowNav] = useState(false); // move it to apps. to pass it down
   //this might need to be moved once home.js is done.
-  
-    // setShowNav(!showNav); //keeps T/F
-  debugger
+
+  // setShowNav(!showNav); //keeps T/F
+
+  const handleClick = (e) => {
+    setVideos([]);
+    setRandomVideos(false);
+    setSearch("");
+    setDisplaySearch("");
+  };
 
   return (
-    <div className = {hamburger ? "small-sidebar" :"sidebar"}>
+    <div className={hamburger ? "small-sidebar" : "sidebar"}>
       <div className="shortcut-links">
         <Link to="/">
-          <a href="">
+          <a onClick={handleClick} href="">
             <img src={home} />
             <p>Home</p>
           </a>
@@ -91,45 +108,5 @@ const SideNav = ({hamburger, setHamburger}) => {
   );
 };
 
-//https://www.geeksforgeeks.org/changing-css-styling-with-react-onclick-event/
-
-//   return (
-//     <div id="mySidenav" className={style}>
-//      <Link to ='/'> <a href =""><img src ={home}><p>Home</p></a></Link>
-//      <Link to ='/'> <a href ="">Home</a></Link>
-//      <Link to ='/'> <a href ="">Home</a></Link>
-//      <Link to ='/'> <a href ="">Home</a></Link>
-//     </div>
-//   )
-// }
-
 export default SideNav;
 
-{
-  /* <ul> */
-}
-{
-  /* this top one needs to be in the home.js - not here. */
-}
-{
-  /* <li onClick={closeOpenNav}><img  className="Hamburger"src ="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg" alt ="Hamburger DropDown" width={"100px"}/></li>
-
-
-  <li><Link to="/"> <img src="https://img.icons8.com/material-sharp/24/undefined/home-page.png" alt="Home" width="25px"/> Home</Link></li>
-  <li><Link to="/about"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> About</Link></li>
-
-  <li><Link to="/videoList"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> videoList</Link></li>
-  <li><Link to="/video"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> video</Link></li>
-</ul>
-    </div>
-  )
-}
-
-export default SideNav
-
-  <li><Link to="/VideoList"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> videoList</Link></li>
-  <li><Link to="/Video"> <img src="https://img.icons8.com/ios-filled/50/undefined/compass--v1.png" alt="About" width="25px"/> video</Link></li> */
-}
-{
-  /* </ul> */
-}

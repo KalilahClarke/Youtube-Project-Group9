@@ -141,7 +141,7 @@ img {
 }
 
 /* ----------------------------Small-SideBar------------------------- */
-
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .small-sidebar{
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */

@@ -8,7 +8,7 @@ import Home from "./components/Home";
 import TopNav from "./components/TopNav";
 import SideNav from "./components/SideNav";
 import Video from "./components/Video";
-import VideoCard from "./components/VideoCard";
+
 
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
   const [submited, setSubmited] = useState(false);
   const [hamburger, setHamburger] = useState(false)
   const [theVideo, setTheVideo] = useState([]);
+  const [randomVideos, setRandomVideos] = useState(false);
+  const [displaySearch, setDisplaySearch] = useState("");
 
   return (
     <>
@@ -34,14 +36,26 @@ function App() {
               setSubmited={setSubmited}
               hamburger ={hamburger}
               setHamburger ={setHamburger}
+              randomVideos = {randomVideos}
+              setRandomVideos = {setRandomVideos}
+              displaySearch = {displaySearch}
+              setDisplaySearch = {setDisplaySearch}
             />
         
             <SideNav 
               hamburger ={hamburger}
               setHamburger ={setHamburger}
+              search={search}
+              setSearch={setSearch}
+              videos={videos}
+              setVideos={setVideos}
+              displaySearch = {displaySearch}
+              setDisplaySearch = {setDisplaySearch}
+              randomVideos = {randomVideos}
+              setRandomVideos = {setRandomVideos}
             />
             <Routes>
-              <Route path="/" element={<Home search={search} videos={videos} />} />
+              <Route path="/" element={<Home displaySearch={displaySearch} setDisplaySearch={setDisplaySearch} randomVideos={randomVideos} search={search} videos={videos} />} />
               <Route path="/about" element={<About />} />
               <Route path="/videos/:id" element={<Video videos={videos} theVideo={theVideo} setTheVideo={setTheVideo} />} />
             </Routes>

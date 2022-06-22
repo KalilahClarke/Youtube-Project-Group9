@@ -18,10 +18,13 @@ function TopNav({
   setVideos,
   submited,
   setSubmited,
-  hamburger, 
-  setHamburger
+  hamburger,
+  setHamburger,
+  randomVideos,
+  setRandomVideos,
+  setDisplaySearch,
+  displaySearch,
 }) {
-
   const apiKey = process.env.REACT_APP_API_KEY;
   const navigate = useNavigate();
 
@@ -36,32 +39,39 @@ function TopNav({
       })
       .catch((err) => {
         console.log(err);
-      
       });
   }, [submited]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setRandomVideos(true);
     setSubmited(!submited);
-  
+
+    if (search === "" && randomVideos === true) {
+      setDisplaySearch("Random");
+    }
   };
 
   const handleChange = (e) => {
     setSearch(e.target.value);
- 
+    setDisplaySearch(e.target.value);
   };
 
   const handleHome = () => {
     navigate("/");
   };
 
-  const changeNav = ()=>{
-    
-    setHamburger(!hamburger)
-    
-  }
-   
-  
+  const changeNav = () => {
+    setHamburger(!hamburger);
+  };
+
+  const handleClick = (e) => {
+    setVideos([]);
+    setRandomVideos(false);
+    setSearch("");
+    setDisplaySearch("");
+    navigate("/");
+  };
 
   return (
     <nav className="header">
@@ -70,10 +80,15 @@ function TopNav({
           className="menu-icon"
           src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-20.jpg"
           alt="menu"
-          onClick ={changeNav}
-          value = {hamburger}
+          onClick={changeNav}
+          value={hamburger}
         />
-        <img className="logo" src={logo} alt="youtube-logo" onClick={handleHome} />
+        <img
+          className="logo"
+          src={logo}
+          alt="youtube-logo"
+          onClick={handleClick}
+        />
       </div>
 
       <div className="nav-middle header">

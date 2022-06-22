@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import TopNav from "./components/TopNav";
 import SideNav from "./components/SideNav";
 import Video from "./components/Video";
+import ComingSoon from "./components/ComingSoon";
 
 
 
@@ -58,6 +59,10 @@ function App() {
               <Route path="/" element={<Home displaySearch={displaySearch} setDisplaySearch={setDisplaySearch} randomVideos={randomVideos} search={search} videos={videos} />} />
               <Route path="/about" element={<About />} />
               <Route path="/videos/:id" element={<Video videos={videos} theVideo={theVideo} setTheVideo={setTheVideo} />} />
+              <Route path="/subscription" element={<ComingSoon />} />
+              <Route path="/history" element={<ComingSoon />} />
+              <Route path="/playlist" element={<ComingSoon />} />
+              <Route path="/messages" element={<ComingSoon />} />
             </Routes>
           </div>
         </Router>

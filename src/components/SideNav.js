@@ -21,7 +21,7 @@ const SideNav = ({hamburger, setHamburger}) => {
   //this might need to be moved once home.js is done.
   
     // setShowNav(!showNav); //keeps T/F
-  debugger
+  
 
   return (
     <div className = {hamburger ? "small-sidebar" :"sidebar"}>

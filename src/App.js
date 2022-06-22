@@ -18,6 +18,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [submited, setSubmited] = useState(false);
   const [hamburger, setHamburger] = useState(false)
+  const [theVideo, setTheVideo] = useState([]);
 
   return (
     <>
@@ -43,7 +44,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home search={search} videos={videos} />} />
               <Route path="/about" element={<About />} />
-              <Route path="/videos/:id" element={<Video videos={videos} />} />
+              <Route path="/videos/:id" element={<Video videos={videos} theVideo={theVideo} setTheVideo={setTheVideo} />} />
             </Routes>
           </div>
         </Router>

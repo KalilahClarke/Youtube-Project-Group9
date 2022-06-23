@@ -10,6 +10,7 @@ Kalilah Clarke |
 
 Info | Link
 ------------- | -------------
+Netlify| https://62b3adf75109c90ae930d43a--kaleidoscopic-strudel-8df0cb.netlify.app
 Github| https://github.com/KalilahClarke/Youtube-Project-Group9
 Project Requirements  | https://github.com/joinpursuit/React-YouTube-Project-Prompt/blob/main/docs/requirements.md
 Trello Board  | https://trello.com/b/erJPqwiA/youtube-project-management

@@ -1,11 +1,8 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
-import YouTube from "react-youtube";
 import VideoCard from "./VideoCard";
-import Error from "./Error";
 import "./Home.css";
 
-export default function Home({ videos, search, randomVideos, setDisplaySearch, displaySearch}) {
+export default function Home({ videos, randomVideos}) {
   if (randomVideos === false ) {
     return (
       <div>
